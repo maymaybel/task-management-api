@@ -45,3 +45,15 @@ The system consists of:
 
 ## Project Status
 Initial API Contract completed.
+
+# Build Docker Image
+docker build -t task-management-api .
+
+# Run Docker Container
+docker run -d -p 3000:3000 --name task-api task-management-api
+
+# Check running containers
+docker ps
+
+# Test API
+curl http://localhost:3000/
